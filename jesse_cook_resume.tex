@@ -1,5 +1,20 @@
 \documentclass[margin,line]{resume}
 \usepackage{multicol}
+\usepackage{calc}
+\usepackage{enumitem}
+
+% Allow page number in resume class; right align
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+\pagestyle{fancy}
+\textheight 265mm
+
+
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
 
 \newenvironment{skills}{
   \begin{list}{\small$\bullet$}{\leftmargin=0em \itemindent=0em \small}
@@ -16,75 +31,36 @@
 \newcommand{\smbull}{\small$\bullet$  }
 
 \begin{document}
-\name{\Large Jesse J. Cook}
-\address{1109 Woodleaf Drive\\O'Fallon\\IL 62269 $\bullet$ (618) 530-0659 $\bullet$ jesse.j.cook@member.fsf.org}
+\name{\noindent\textbox{Untwyne Inc.\hfill}\textbox{\hfil Jesse Cook $-$ Co-Founder\hfil}\textbox{\hfill jesse@untwyne.com}}
+%\address{607 E Main St\\Carlinville\\IL 62626 $\bullet$ (863) 608-9963 $\bullet$ jesse@untwyne.com}
 \begin{resume}
-%__________________________________________________________________________________________________________________
-% Objective
-\section{Objective}
-To be a driving force within a team aimed at instigating positive change through technology worldwide
-
-
-%__________________________________________________________________________________________________________________
-%\section{Clearance}
-%DoD Secret Security Clearance
+\setcounter{page}{1337}
 
 %__________________________________________________________________________________________________________________
 % Skills
 \section{Skills}
-\begin{ncolumn}{6}
-{\bf Languages}
-  \begin{skills}
-  \item[] C
-  \item[] Ruby
-  \item[] Perl
-  \item[] Python
-  \end{skills}
-&
-{\bf Libraries}
-  \begin{skills}
-  \item[] Libvirt
-  \item[] GLib
-  \item[] PostgreSQL
-  \item[] ActiveRecord
-  \end{skills}
-&
-{\bf Dev Tools}
-  \begin{skills}
-  \item[] Git
-  \item[] CMake
-  \item[] GCC
-  \item[] Binutils
-  \end{skills}
-&
-{\bf Test Tools}
-  \begin{skills}
-  \item[] GDB
-  \item[] Valgrind
-  \item[] RSpec
-  \item[] Google Test
-  \end{skills}
-&
-{\bf Environment}
-  \begin{skills}
-  \item[] GNU/Linux
-  \item[] POSIX
-  \item[] OS X
-  \item[] Windows
-  \end{skills}
-&
-{\bf Other}
-  \begin{skills}
-  \item[] Virtualization
-  \item[] Networking
-  \item[] Debian PMS
-  \item[] \LaTeX
-  \end{skills}
-\end{ncolumn}
+Extensive experience in Linux systems development with a focus on networking and virtualization
+
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries Development}]
+    \small\item[Languages ] C, Python, Ruby, Perl, Java, C++, Haskell, C\#, Scheme
+    \small\item[APIs      ] Libvirt, GLib, Libnl, POSIX, Libpq, Libxml2, Paramiko, Libssh2, ActiveRecord
+    \small\item[Develpment] Git, Vim, CMake, GCC, Binutils, Make, Autotools
+    \small\item[Testing   ] GDB, Behave, PDB, Valgrind, Splint, RSpec, Google Test
+    \small\item[OS        ] GNU/Linux (Debian, Arch, Ubuntu, Gentoo), Android, OS X, Windows (Home, Server)
+    \small\item[Other     ] Virtualization, Networking, POSIX, Debian Package Management, \LaTeX
+\end{description}
 
 %__________________________________________________________________________________________________________________
 %Professional Experience
 \section{Experience}
+
+{\sl CFO and Co-Founder}                                              \hfill March 2014 -- Present\\
+Untwyne Inc.                                                          \hfill  O'Fallon, IL
+\begin{itemize} \itemsep -2pt % reduce space between items
+\small\item Evaluated funding opportunities and contributed to Small Business Innovation Research solicitations
+\small\item Performed market research for customer projects related to data analysis, processing, and visualization
+\small\item Formed corporate entity with environmentally friendly bylaws and processes, including share issuance
+\end{itemize}
 
 {\sl Lead Software Developer}, \textbf{\small DoD Secret Clearance}   \hfill  March 2008 -- Present\\
 Camber Corporation                                                    \hfill  O'Fallon, IL
@@ -94,20 +70,11 @@ Camber Corporation                                                    \hfill  O'
 \small\item Led the development of configuration capability for automated deployment of custom virtual networks
 \small\item Guided a predominantly new team through the design, development, and release of the core framework
 \small\item Led an effort to ameliorate software development practices through the application of agile principles
-%\small\item Contributed a libvirt patch upstream that enables relative path support for QEMU image backing files
-%\small\item Worked as part of a team to develop simulation and exploitation software for network security training
-%\small\item Acted as a key contributor to the core framework design by identifying flaws and presenting solutions
 \small\item Developed a library for inter-process communication between framework modules using network sockets
 \small\item Developed a virtual machine manager that minimizes snapshot size as well as create and revert times
 \small\item Constructed the tiered DNS infrastructure, mail generation, and web content for a virtualized Internet
-%\small\item Developed an automatic installation and configuration tool for a custom Debian-based operating system
 \small\item Setup production network and system infrastructure including Gentoo, Debian, Git, Bind, and maraDNS
-%\small\item Provided on-site maintenance to existing contracts and support for military network training exercises
-%\small\item Mentored team members in the areas of Linux systems development, source control, and agile processes
 \small\item Assisted students as the technical instructor of the Advanced Cyber Network Defense Training Course
-%\small\item Received an {\sl On-the-Spot Award} from the CEO for a research proposal regarding the utilization of
-%            mobile botnets for targeted acquisition and distributed disruption in response to a BAA from AFMC
-
 \end{itemize}
 
 {\sl IS\&GS Intern}                 \hfill  August 2007 -- March 2008\\
@@ -174,16 +141,6 @@ Illinois Army National Guard        \hfill   Springfield, IL
    \small Grace Murray Hopper Award  & \small CEO On-the-Spot Award      & \small Army Achievement Medal (3) \\
    \small Computer Science Award     & \small Vice President of CAOS     & \small Distinguished Honor Graduate \\
    \small Valedictorian Award        & \small Member of Phi Kappa Phi    & \small Honor Graduate \\
-\end{ncolumn}
-
-%__________________________________________________________________________________________________________________
-% Hobbies
-
-\section{Hobbies}
-\begin{ncolumn}{4}
-   \setlength\parsep{15pt}
-   \small Budgeting Software & \small Android Hacking & \small AI Toolset   & \small Mini-ITX Firewall \\
-   \small Loan Analysis Tool & \small CuBox-i Hacking & \small Aufs Sandbox & \small Libvirt Patches   \\
 \end{ncolumn}
 
 \end{resume}
