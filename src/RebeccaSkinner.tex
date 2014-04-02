@@ -1,0 +1,382 @@
+\documentclass[margin,line]{resume}
+\usepackage{multicol}
+\begin{document}
+\name{\Large Rebecca Skinner}
+\begin{resume}
+%__________________________________________________________________________________________________________________
+% Contact Information
+\section{\mysidestyle \textbf{Contact}}
+{\tt rebecca@rebeccaskinner.net} \hfill {\tt www.rebeccaskinner.net}
+\hfill {\tt github.com/rebeccaskinner}\\\vspace{0mm}
+% 429 Colleen Drive \hfill 816-591-0025 \vspace{0mm}\\\vspace{0mm}%
+% OFallon, IL, 62269 \hfill {\tt tim@timskinner.net} \vspace{0mm}\\\vspace{0mm}%
+% \hfill {\small \textsl{https://github.com/timskinner}} \textbullet {\small \textsl{https://timskinner.net}} \vspace{0mm}\\\vspace{0mm}
+
+%__________________________________________________________________________________________________________________
+% Professional Summary
+\section{\mysidestyle \textbf{Summary}}
+I have experience as a developer and team lead in a wide variety of programming
+environments and architectures, especially in C and C++ Linux systems and
+application development. My experience working on a variety of projects and
+platforms has as both a team member and a team leader has given me valuable
+insights into the software development lifecycle which I am able to leverage in
+the development of robust software delivered on time and on budget. My
+interpersonal and communication skills, combined with formal education and work
+experience in systems architecture and design allow me to work well interfacing
+with customers, stakeholders, and other developers in the process of gathering
+project requirements, performing cost and timeline estimation, and designing
+and implementing solutions to meet customer and business needs.
+
+% \section{\mysidestyle \textbf{Clearance}} DOD Secret Clearance
+%__________________________________________________________________________________________________________________
+% Skills
+\section{\mysidestyle \textbf{Languages}}
+C, C++, Haskell, Ruby, Bash, Perl, Javascript, Mathematica, Python, SQL
+
+\section{\mysidestyle \textbf{Libraries}}
+POSIX, GNU libc, CUDA, STL, Boost, Gtk+, Netfilter, SQLite, Libvirt, OpenSSL, GSL,
+X11, MySQL, libevent, glib, Webroot Rocksafe, Smartfilter, Postgresql, curl,
+ImageMagick, libx264, libjpeg, ffmpeg, GnuTLS, avisynth, SDL, FFTW
+
+\section{\mysidestyle \textbf{Tools}}
+valgrind, gprof, splint, hlint, ctags, cscope, ack, binutils, Bison, CMake, GNU Make,
+GNU Autotools, bitbake
+
+\section{\mysidestyle \textbf{Virtualization}}
+Libvirt, Qemu/KVM, LXC, OpenVZ, Xen, VirtualBox, VMWare Workstation, VMWare ESX, VMWare Server
+
+\section{\mysidestyle \textbf{Version Control}}
+Git, Subversion, CVS, TeamSource
+
+\section{\mysidestyle \textbf{Networking}}
+Netfliter, IPTables, EBTables, Snort, iperf, httpload, tcpdump, wireshark, socat, ntop,
+nagios, BIND, OpenVPN, OpenLDAP, kerberos, OpenSSL, GnuTLS, OpenSSH,
+metasploit, wget, curl
+
+\section{\mysidestyle \textbf{Documentation}}
+\LaTeX, Doxygen, Asciidoc, groff, Visio, Inkscape, Umbrello
+
+\section{\mysidestyle \textbf{Operating Systems}}
+Linux x86/x86-64 (Debian, Arch, Fedora, CentOS, Gentoo, Ubuntu, Suse), Linux ARM ({\AA}ngstr\"{o}m), Android, Windows, Mac OS
+
+\section{\mysidestyle \textbf{Other Technical Skills}}
+Multithreaded programming, networking, cryptography and PKI, network security,
+optimization, AJAX, SOAP, JSON, Object Oriented Programming, Functional
+Programming, UML, HTML, CSS, image and video processing
+
+\section{\mysidestyle \textbf{Non-Technical Skills}}
+Leadership, communication, team management, project management, public speaking
+
+\newpage
+%__________________________________________________________________________________________________________________
+%Professional Experience
+\section{\mysidestyle \textbf{Employment History}}
+\textbf{Camber Corporation}, O'Fallon, IL \hfill \textbf{June 2011 -- Present}\vspace{1mm}\\\vspace{1mm}%
+\textit{\small{Cybersecurity}}\vspace{1mm}\\\vspace{0mm}%
+\textsl{Sr. Software Developer}\\
+At Camber I work as a senior software developer on the CENTS team designing and
+developing network training simulators for use by DOD and commercial customers.
+My job duties include requirements gathering, software and architectural
+design, timeline planning, advising project managers and business owners on the
+technical impact of business decisions, working with team leads to create and
+delegate tasks, developing software, performing code reviews, performing unit
+testing, and working with integration and test engineers on the development of
+integration tests.
+\vspace{1mm}\\\vspace{0mm}
+\begin{itemize}
+    \item Developed Traffic Analysis System in Haskell
+        \begin{itemize}
+            \item Used FFI to create haskell API around existing C libraries
+            \item Designed and implemented algorithms to analyze network packet
+                data to infer behavioral patterns
+            \item Designed and implemented algorithms to infer traffic flows
+                for non-stateful protocols
+            \item Implemented a system to optimize database transactions to
+                manage storage of high volumes of network traffic analysis data
+            \item Implemented a web service to provide JSON data containing
+                analyzed network information
+        \end{itemize}
+    \item Developed Network Monitoring System in C
+        \begin{itemize}
+            \item Designed and implemented a TCP state engine in userspace
+            \item Designed and implemented a custom memory allocation system to
+                improve performance of packet monitoring performance
+            \item Designed and implemented adaptive heuristic-based
+                probabilistic datastructures to manage rulesets and perform
+                first-stage packet filtration
+        \end{itemize}
+    \item Developed Linux Kernel Module for Network Testing
+        \begin{itemize}
+            \item Used C to write a Linux kernel module to perform intelligent
+                source and destination NATting for test purposes
+            \item Used C to write userspace utilities to generate random sets
+                of IP addresses
+            \item Used C to write userspace utilities to interact with kernel
+                module
+        \end{itemize}
+    \item Developed Linux Installation Tools
+        \begin{itemize}
+            \item Used C, Ruby, and Bash to implement tools to automate disk
+                  partitioning, disk formatting, hardware detection, network
+                  configuration, and package selection and installation for
+                  systems running a customized variant of Debian GNU/Linux
+              \item Designed and used Ruby to implement tools to automate
+                  system configuration based on customer requirements.
+        \end{itemize}
+    \item Development Process Improvement
+        \begin{itemize}
+            \item Advocated for and implemented lean development processes,
+                resulting in significant increases in developer productivity
+                and better timeline estimations
+            \item Advocated for and implemented iterative pull-based
+                development cycle which allowed the team to begin providing
+                monthly software feature updates, greatly increasing the rate
+                at which features were delivered to customers
+            \item Advocated for and implemented code reviews as a requirement
+                for all feature merges
+        \end{itemize}
+\end{itemize}
+
+\textbf{Techguard Security LLC}, O'Fallon, MO \hfill \textbf{June 2010 -- June 2011}\vspace{1mm}\\\vspace{1mm}%
+\textit{\small{Research and Development, Center for Adaptive Technology Security}}\vspace{1mm}\\\vspace{0mm}%
+\textsl{Sr. Development Engineer}\\
+At Techguard I worked on the design, implementation, and documentation of
+algorithms as part of DOD funded research projects and internal research and
+development. As a Sr. Software Developer I worked both alone and in team
+leadership positions. I have gained experience in developing software to run on
+multiple hardware platforms include developing high performance GPU accelerated
+programs using CUDA and highly optimized software for embedded applications
+running on the ARM architecture.  The documentation and reporting requirements
+of my job have allowed me to utilize my excellent communication skills in the
+creation of technical status reports and formal papers describing the design
+and implementation of software and algorithms. 
+\vspace{1mm}\\\vspace{0mm}
+\begin{itemize}
+    \item Researched, designed, and implemented video compression algorithms
+        \begin{itemize}
+        % \item Designed and implemented a video compression algorithm capable of
+        %       transmitting 2112x480 2D and 3D video at 30fps from an unmanned
+        %       ground vehicle over an unreliable 1Mbps connection.
+        \item Designed and implemented an algorithm to perform real time
+              adaptive video compression based on operator field-of-view using
+              region based entropy and framerate scaling.
+        % \item Designed and implemented real time video stabilization algorithms in C.
+        \item Designed and implemented a system to generate neural-network
+              training data in C++.
+        % \item Implemented FFT, DCT, generic convolution, colorspace
+        %       conversion and chroma subsampling algorithms on x86-64 and CUDA
+        %       in Haskell and C.
+        % \item Implemented CAVLC, CABLC, Huffman Encoding, Golomb coding, and
+        %       run-length encoding on x86-64 and CUDA in C.
+        % \item Implemented a multi-frame video compositing system in C.
+        % \item Implemented a system to communicate with multiple IP based video
+        %       capture devices in C++.
+        \item Performed timeline and resource utilization estimates.
+        \item Developed and assigned tasks to team members.
+        % \item Wrote monthly technical status reports on research and
+        %       development progress.
+        \item Wrote and published technical whitepapers describing algorithm design and
+              performance.
+        \item Assisted in modification of hardware to integrate with unmanned
+              ground vehicle.
+        \end{itemize}
+    \item Researched, designed, and implemented decision making and
+          cryptographic algorithms as part of a research initiative
+        \begin{itemize}
+        \item Designed and implemented a distributed N of M key
+              validation system in C.
+        % \item Designed and implemented a neural-network-like automated decision
+        %       making system capable of interfacing with hardware sensors in
+        %       Haskell and C.
+        \item Designed a system to allow graphical simulation and visualization
+              of decision making and key validation system in C using Gtk+.
+        \item Wrote technical whitepapers describing the algorithms and
+              implementation of the decision making and key verification
+              systems.
+        \end{itemize}
+    \item Created a miniature network data sensor for the ARM platform
+        \begin{itemize}
+        % \item Created a userspace packet filtering application in C and C using
+        %       IPTables and libnetfilter-queue.
+        % \item Ported existing C and C++ code written for x86\_64 kernel and
+        %       user space to the ARM Linux userspace.
+        % \item Designed and implemented a system to read multi-gigabyte files
+        %       on a limited memory system in C.
+        % \item Developed software to interoperate with multiple network clients
+        %       to monitor and control the sensor in C and C++.
+        \item Created SOAP services for management of sensor in C.
+        \item Created a modified version of the {\AA}ngstr\"{o}m linux distribution for
+              use on network sensors.
+        \item Used Bitbake to create a build system capable of building an
+              image including all custom software for deployment on sensor.
+        \item Designed and performed formal throughput testing to evaluate
+              performance for the ARM network sensor.
+        \item Wrote technical whitepapers detailing sensor performing testing
+              methodology and results.
+        % \item Took the initiative in suggesting the development of a network
+        %       sensor for the ARM platform.
+        % \item Researched and selected hardware to be used for the development of
+        %       the network sensor.
+        % \item Created concept renderings and diagrams as part of a presentation
+        %       advocating development of the sensor platform.
+        % \item Assisted in the development of marketing and informational
+        %       material to assist in procuring funding for further product
+        %       development.
+        \end{itemize}
+    \item Created DNS lookup system for ACL generation
+        % \begin{itemize}
+        % \item Created an application in C to proxy DNS requests from a web
+        %       browser and store results in a MySQL database.
+        % \item Created a database using MySQL to store DNS query information.
+        % \item Created a web interface for generating DNS requests and
+        %       generating ACLS in PHP.
+        % \end{itemize}
+    \item Ported and optimized existing x86 Linux code to ARM Android.
+        % \begin{itemize}
+        %     \item Ported x86 Linux code written in C to run on Android using
+        %           the Android NDK.
+        %     \item Modified existing build system to support Android build
+        %           system.
+        %     \item Modified Android Java applications to use NDK libraries.
+        % \end{itemize}
+    % \item Initiated and successfully completed transition from Subversion to
+    %       Git.
+    %     \begin{itemize}
+    %         \item Established procedures and best practices for using git.
+    %         \item Trained and mentored team members on git usage.
+    %     \end{itemize}
+    \item Co-Authored an article for the C4ISR Journal (``Stopping The Noise'' expected publication
+          date August 2011).
+\end{itemize}
+
+\textbf{EADS North America Defense}, O'Fallon, IL \hfill \textbf{November 2008 -- June 2010}\vspace{1mm}\\\vspace{1mm}%
+\textit{\small{Research and Development}}\vspace{1mm}\\\vspace{0mm}%
+\textsl{Research Scientist, Team Lead}\\
+At EADS I worked as the team lead for the Linux systems development group. As
+the systems development team lead I created a completely new design for SLAM-R
+2.0 that allowed the product to have greatly enhanced stability and performance
+while using modern programming practices to reduce the time to design and
+implement new features.  I implemented the core design of the 2.0 version of
+SLAM-R and lead a group of developers in implementing requirements within the
+new core framework. I was able to perform both team lead and design tasks while
+acting as a fully participatory member of the development team. In addition to
+design and development as a team lead, I performed fundamental research in
+areas related to network security, virtualization, high performance and high
+scalability computing, cryptography, and cyber security both independently and on
+a team. As a result of the research I produced several presentations and papers
+including whitepapers for internal and external publication and a technical
+proposal in response to a DARPA BAA.
+\vspace{1mm}\\\vspace{0mm}
+\begin{itemize}
+\item Designed and implemented the core components of the SLAM-R software
+%    \begin{itemize}
+%        \item Implemented high performance network server processes in C
+%        \item Used C and Libvirt to create custom software for creating and
+%              managing KVM virtual machines
+%        \item Used gnutls to implement TLS encryption of network
+%              communications
+%        \item Used C to implemented a custom high-scalability IPC mechanism
+%        \item Designed and implemented a high performance green threading
+%              library with task scheduling in C
+%    \end{itemize}
+% \item Analyzed software requirements
+% \item Created design and implementation plans
+\item Developed timelines, release schedules, and component specifications
+% \item Developed taskings and time estimates
+% \item Assigned and tracked progress of team member tasks
+\item Mentored team members
+% \item Reviewed code for correctness, efficiency, and standards compliance
+% \item Created coding and documentation standards
+% \item Interviewed prospective team members
+\item Gathered software requirements
+% \item Worked independently to create and document Linux based operating system for the SLAM-R appliance.
+% \item Worked independently to create GUI and text based installers for the
+%       SLAM-R OS and software
+\item Worked independently and on teams to perform fundamental research and
+      create whitepapers in areas related to simulation, network security,
+      virtualization, and high performance computing.
+% \item Worked with a team to create designs and draft proposals for DARPA BAAs
+\end{itemize}
+
+\textbf{Cymtec Systems}, Creve Coure, Missouri \hfill \textbf{May 2007 -- October 2008}\vspace{1mm}\\\vspace{1mm}%
+\textit{\small{Linux Systems Developer}}\vspace{1mm}\\\vspace{0mm}%
+At Cymtec I worked individually and on a team as the lead systems developer
+working on the Sentry bridging network security appliance and the Scout intrusion
+detection system. I lead the design and development of version 2.0 of the
+Sentry product, including designing and implementing several key features
+including realtime TCP packet reassembly, realtime scanning of network traffic
+for malware, URL filtering, LDAP integration with ACLs, a new software update
+system, and support of two new hardware platforms. As part of the transition to
+new hardware platforms I wrote new device drivers to support Intel hardware
+network failover chips as well as modified existing Realtek NIC drivers and the
+kernel networking stack for Linux 2.6.18. As the lead developer I was also able
+to implement a number of performance optimizations that improved the real time
+network scanning and malware detection speed from approximately 100Mbps
+sustained to over 800Mbps sustained while decreasing memory utilization from
+150MB average to 75MB average when tested on the same hardware platform. I
+worked with hardware providers to analyze technical specifications and develop
+userspace drivers for a serial LCD interface and worked with third party
+software vendors to integrate their licensed IP into the Sentry product.
+\vspace{1mm}\\\vspace{0mm}
+\begin{itemize}
+\item Lead the systems development of both the Sentry and Scout products
+% \item Migrated the Sentry and Scout products to two new hardware platforms
+\item Designed unified software update system for Sentry and Scout
+% \item Created a new event reporting application for Scout
+% \item Designed and implemented a new init system for the Linux based Scout OS
+% \item Developed a reporting system for deployed Scout units
+% \item Updated the Scout web user interface
+% \item Migrated existing utilities from Java to C++
+% \item Created a unified custom Linux based OS for the Sentry and Scout
+%       appliances
+\item Created a Linux kernel module to support Intel hardware failover
+      chips.
+% \item Fixed bugs in the Linux mii network stack
+% \item Designed and implemented an embedded LCD configuration application for
+%       Sentry
+\item Designed and implemented a highly efficient userspace TCP reassembly
+      engine in C++.
+\item Designed and implemented real-time deep-packet inspection algorithms in C++
+% \item Designed and implemented an automated online software update system for
+%       appliances
+% \item Created a highly efficient XML parsing engine in C++
+% \item Created a pluggable alert system for IDS events
+% \item Designed and developed LDAP integrated ACLs for Sentry
+% \item Analyzed performance of existing Scout and Sentry code and optimized
+%       performance
+\item Analyzed and reverse engineered network protocols
+% \item Created an internal documentation system
+% \item Managed source code repositories
+\end{itemize}
+
+%\textbf{Kean, Inc}, Jefferson City, Missouri \hfill \textbf{2006}\vspace{1mm}\\\vspace{1mm}%
+\textbf{Kean, Inc}, Jefferson City, Missouri \hfill \textbf{August 2006 -- May 2007}\vspace{1mm}\\\vspace{1mm}%
+\textit{\small{Software Developer}}\vspace{1mm}\\\vspace{0mm}%
+\textsl{Systems Developer}\\
+At Keane I worked as a junior developer and tier 3 helpdesk on contract to the
+Missouri Department of Revenue on the state drivers license system. I worked
+with customers to identify problems, remotely repair systems, and identify and
+fix bugs in a large existing codebase. I was also responsible for creating and
+pushing out software updates to hundreds of remote locations.
+% \vspace{1mm}\\\vspace{0mm}
+% \begin{itemize}
+% \item Created an automated system for updating zipcodes
+% \item Established and documented procedures on repairing corrupted Oracle
+%       databases
+% \item Performed full software and regression testing
+% \item Debugged and fixed memory leaks
+% \item Worked with internal and external customers to troubleshoot software
+%       failures
+% \end{itemize}
+
+\section{\mysidestyle \textbf{Professional Organizations}}
+\textbf{ACM}\\ Member in good standing
+
+%__________________________________________________________________________________________________________________
+% Education
+\section{\mysidestyle \textbf{Education and Training}}
+\textbf{BS in Computer Information Systems}\\ DeVry University, Kansas City, Missouri\vspace{1mm}\\\vspace{0mm}%
+\textbf{2011 Stanford Online AI Class}\\ Completed the 2011 online Stanford AI course
+
+\end{resume}
+\end{document}
