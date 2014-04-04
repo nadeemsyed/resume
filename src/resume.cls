@@ -280,7 +280,7 @@
 \newskip\sectionskip
 \newdimen\resumewidth
 
-\resumewidth=6.5in
+%\resumewidth=6.5in
 \sectionskip=3.5ex plus 1ex minus -.2ex % values stolen from LaTeX
 
 \def\newsectionwidth#1{%
@@ -811,7 +811,7 @@
 %           and res.cls class by Michael DeCorte.
 %           I have merged these for educational purposes only.
 
-\oddsidemargin -11mm
+\oddsidemargin -8mm
 \evensidemargin -11mm
 %\textwidth=150mm
 \textwidth=154mm
@@ -819,7 +819,7 @@
 \parsep=0cm
 \topmargin -12mm
 %\textheight 265mm
-\textheight 275mm
+\textheight 248mm
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
