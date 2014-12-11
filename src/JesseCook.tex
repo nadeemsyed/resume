@@ -4,11 +4,11 @@
 \usepackage{enumitem}
 
 % Allow page number in resume class; right align
-\usepackage{fancyhdr}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\rfoot{\thepage}
-\pagestyle{fancy}
+% \usepackage{fancyhdr}
+% \fancyhf{}
+% \renewcommand{\headrulewidth}{0pt}
+% \rfoot{\thepage}
+% \pagestyle{fancy}
 
 
 \newcommand\textbox[1]{%
@@ -30,10 +30,17 @@
 \newcommand{\smbull}{\small$\bullet$  }
 
 \begin{document}
-\name{\noindent\textbox{Untwyne Inc.\hfill}\textbox{\hfil Jesse Cook $\cdot$ Co-Founder\hfil}\textbox{\hfill jesse@untwyne.com}}
+\name{\Large Jesse J. Cook}
+\address{1109 Woodleaf Drive\\O'Fallon\\IL 62269 $\bullet$ (618) 530-0659 $\bullet$ jesse.j.cook@member.fsf.org}
+%\name{\noindent\textbox{Untwyne Inc.\hfill}\textbox{\hfil Jesse Cook $\cdot$ Co-Founder\hfil}\textbox{\hfill jesse@untwyne.com}}
 %\address{607 E Main St\\Carlinville\\IL 62626 $\bullet$ (863) 608-9963 $\bullet$ jesse@untwyne.com}
 \begin{resume}
-\setcounter{page}{13}
+%\setcounter{page}{13}
+
+%__________________________________________________________________________________________________________________
+% Objective
+\section{Objective}
+To be a driving force within a team aimed at instigating positive change through technology worldwide
 
 %__________________________________________________________________________________________________________________
 % Skills
@@ -42,19 +49,26 @@ Extensive experience in Linux systems development with a focus on networking and
 
 \begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries Development}]
     \small\item[Languages ] C, Python, Bash, Ruby, Perl, Java, C++, Haskell, C\#, Scheme
-    \small\item[APIs      ] Libvirt, GLib, Libnl, POSIX, Libpq, Libxml2, Paramiko, Libssh2, ActiveRecord
+    \small\item[APIs      ] Libvirt, GLib, Libnl, POSIX, Libpq, Libxml2, Paramiko, Libssh2, Eventlet, Requests
     \small\item[Develpment] Git, Vim, CMake, GCC, Strace, Binutils, Make, Autotools
-    \small\item[Testing   ] GDB, Behave, PDB, Valgrind, Splint, RSpec, Google Test
+    \small\item[Testing   ] GDB, Behave, PDB, Valgrind, Splint, RSpec, Google Test, Tox, Testr, PyMox, Mock
     \small\item[OS        ] GNU/Linux (Debian, Arch, Ubuntu, Gentoo), Android, OS X, Windows (Home, Server)
-    \small\item[Other     ] Virtualization, Networking, POSIX, Debian Package Management, \LaTeX
+    \small\item[Other     ] Virtualization, Networking, POSIX, OpenStack, Debian Package Management, \LaTeX
 \end{description}
 
 %__________________________________________________________________________________________________________________
 %Professional Experience
 \section{Experience}
 
+{\sl Senior Software Developer}                                       \hfill May 2014 -- Present\\
+Rackspace Inc.                                                        \hfill O'Fallon, IL
+\begin{itemize} \itemsep -2pt % reduce space between items
+\small\item Contributed patches and feature specs to OpenStack as a part of the Cloud Servers and Images Team
+\small\item Identified and resolved application, networking, and system issues with large-scale cloud deployments
+\end{itemize}
+
 {\sl CFO and Co-Founder}                                              \hfill March 2014 -- Present\\
-Untwyne Inc.                                                          \hfill  O'Fallon, IL
+Untwyne Inc.                                                          \hfill O'Fallon, IL
 \begin{itemize} \itemsep -2pt % reduce space between items
 \small\item Evaluated funding opportunities and contributed to Small Business Innovation Research solicitations
 \small\item Performed market research for customer projects related to data analysis, processing, and visualization
@@ -64,27 +78,27 @@ Untwyne Inc.                                                          \hfill  O'
 {\sl Lead Software Developer}, \textbf{\small DoD Secret Clearance}   \hfill  March 2008 -- Present\\
 Camber Corporation                                                    \hfill  O'Fallon, IL
 \begin{itemize} \itemsep -2pt % reduce space between items
-\small\item Overcame tight deadlines with my team of 10 through effective prioritization and resource management
+% \small\item Overcame tight deadlines with my team of 10 through effective prioritization and resource management
 \small\item Designed and directed the development of a robust software build, test, and package deployment system
 \small\item Led the development of configuration capability for automated deployment of custom virtual networks
 \small\item Guided a predominantly new team through the design, development, and release of the core framework
 \small\item Led an effort to ameliorate software development practices through the application of agile principles
-\small\item Developed a library for inter-process communication between framework modules using network sockets
+% \small\item Developed a library for inter-process communication between framework modules using network sockets
 \small\item Developed a virtual machine manager that minimizes snapshot size as well as create and revert times
 \small\item Constructed the tiered DNS infrastructure, mail generation, and web content for a virtualized Internet
 \end{itemize}
 
-{\sl IS\&GS Intern}                 \hfill  August 2007 -- March 2008\\
-Lockheed Martin Corporation         \hfill  O'Fallon, IL
-\begin{itemize} \itemsep -2pt % reduce space between items
-\small\item Worked as part of the team tasked with converging data feeds into the Global Transportation Network
-\end{itemize}
-
-{\sl IT Intern}                     \hfill  May 2007 -- August 2007\\
-Anheuser-Busch Companies, Inc.      \hfill  St. Louis, MO
-\begin{itemize} \itemsep -2pt % reduce space between items
-\small\item Provided valuable input and key deliverables as part of the core team on the IT Transformation Project
-\end{itemize}
+% {\sl IS\&GS Intern}                 \hfill  August 2007 -- March 2008\\
+% Lockheed Martin Corporation         \hfill  O'Fallon, IL
+% \begin{itemize} \itemsep -2pt % reduce space between items
+% \small\item Worked as part of the team tasked with converging data feeds into the Global Transportation Network
+% \end{itemize}
+% 
+% {\sl IT Intern}                     \hfill  May 2007 -- August 2007\\
+% Anheuser-Busch Companies, Inc.      \hfill  St. Louis, MO
+% \begin{itemize} \itemsep -2pt % reduce space between items
+% \small\item Provided valuable input and key deliverables as part of the core team on the IT Transformation Project
+% \end{itemize}
 
 {\sl Personnel Services Sergeant}   \hfill   March 2000 -- March 2006\\
 Illinois Army National Guard        \hfill   Springfield, IL
@@ -99,9 +113,9 @@ Illinois Army National Guard        \hfill   Springfield, IL
 {\small
   {\sl Master of Science}, Computer Science \hfill
   Georgia Institute of Technology\hfill
-  Expected Dec 2018\\
-  Specialization: Networking and Systems \hfill
-  GPA TBD%4.00/4.00
+  Expected May 2017\\
+  Specializations: Networking and Systems \hfill
+  GPA 4.00/4.00
 }
 \begin{itemize} \itemsep -2pt % reduce space between items
 \small\item Invited to join the first group of students admitted to the program offered in partnership with Udacity
@@ -134,8 +148,7 @@ Illinois Army National Guard        \hfill   Springfield, IL
    \setlength\parsep{15pt}
    \small Summa Cum Laude            & \small AI Advanced Track Top 10\% & \small Army Commendation Medal \\
    \small Grace Murray Hopper Award  & \small CEO On-the-Spot Award      & \small Army Achievement Medal (3) \\
-   \small Computer Science Award     & \small Vice President of CAOS     & \small Distinguished Honor Graduate \\
-   \small Valedictorian Award        & \small Member of Phi Kappa Phi    & \small Honor Graduate \\
+   \small Valedictorian Award        & \small Vice President of CAOS     & \small Distinguished Honor Graduate \\
 \end{ncolumn}
 
 \end{resume}
