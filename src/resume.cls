@@ -811,7 +811,7 @@
 %           and res.cls class by Michael DeCorte.
 %           I have merged these for educational purposes only.
 
-\oddsidemargin -8mm
+\oddsidemargin -8.5mm
 \evensidemargin -11mm
 %\textwidth=150mm
 \textwidth=154mm
