@@ -1,8 +1,10 @@
 \documentclass[margin,line]{resume}
 \usepackage{multicol}
+\usepackage{calc}
+\usepackage{enumitem}
 
 \newenvironment{skills}{
-  \begin{list}{\small$\bullet$}{\leftmargin=0em \itemindent=0em \small}
+\begin{list}{\small$\bullet$}{\itemsep=0pt \leftmargin=0em \itemindent=0em \small}
 }{
   \end{list}
 }
@@ -140,14 +142,14 @@ Camber Corporation                                                   \hfill  O'F
 %\small\item Contributed a libvirt patch upstream that enables relative path support for QEMU image backing files
 %\small\item Worked as part of a team to develop simulation and exploitation software for network security training
 %\small\item Acted as a key contributor to the core framework design by identifying flaws and presenting solutions
-\small\item Developed a library for inter-process communication between framework modules using network sockets
+%\small\item Developed a library for inter-process communication between framework modules using network sockets
 \small\item Developed a virtual machine manager that minimizes snapshot size as well as create and revert times
 \small\item Constructed the tiered DNS infrastructure, mail generation, and web content for a virtualized Internet
 %\small\item Developed an automatic installation and configuration tool for a custom Debian-based operating system
-\small\item Setup production network and system infrastructure including Gentoo, Debian, Git, Bind, and maraDNS
+%\small\item Setup production network and system infrastructure including Gentoo, Debian, Git, Bind, and maraDNS
 %\small\item Provided on-site maintenance to existing contracts and support for military network training exercises
 %\small\item Mentored team members in the areas of Linux systems development, source control, and agile processes
-\small\item Assisted students as the technical instructor of the Advanced Cyber Network Defense Training Course
+%\small\item Assisted students as the technical instructor of the Advanced Cyber Network Defense Training Course
 \small\item Recognized by CEO for research proposal on distributed disruption and acquisition via mobile botnets
 \end{itemize}
 
@@ -220,6 +222,16 @@ Illinois Army National Guard  \hfill   Springfield, IL
 %    \small Budgeting Software & \small Android Hacking & \small AI Toolset   & \small Mini-ITX Firewall \\
 %    \small Loan Analysis Tool & \small CuBox-i Hacking & \small Aufs Sandbox & \small Libvirt Patches   \\
 % \end{ncolumn}
+
+%__________________________________________________________________________________________________________________
+% Hobbies
+
+\section{Gaming}
+\begin{description}[topsep=0pt,partopsep=0pt,itemsep=0pt,leftmargin=!,labelwidth=\widthof{\bfseries Most Play}]
+    \small\item[Active    ] Hearthstone, LoL, MTG, Pokemon Go, XCOM: Enemy Within, Divinity: Original Sin
+    \small\item[Favorite  ] FF Tactics, MTG, XCOM, NetHack, Life is Strange, Mario RPG, Zelda: Ocarina of Time
+    \small\item[Most Play ] Final Fantasy XI
+\end{description}
 
 %__________________________________________________________________________________________________________________
 % Links
