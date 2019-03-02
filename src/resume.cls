@@ -185,7 +185,7 @@
 %\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 %\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
 
-\PassOptionsToClass{11pt,12pt}{article}
+\PassOptionsToClass{10pt,11pt}{article}
 \LoadClassWithOptions{article}
 
 \newif\if@line
@@ -814,12 +814,12 @@
 \oddsidemargin -8.5mm
 \evensidemargin -11mm
 %\textwidth=150mm
-\textwidth=154mm
+\textwidth=150mm
 \itemsep=0cm
 \parsep=0cm
 \topmargin -12mm
-%\textheight 265mm
-\textheight 248mm
+\textheight 265mm
+%\textheight 248mm
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
