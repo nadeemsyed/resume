@@ -1,6 +1,6 @@
 LATEX_SRC_PATH=$(PWD)/src
 
-all: JesseCook.pdf
+all: syed_nadeem.pdf
 
 %.pdf: src/%.tex
 	TEXINPUTS=${LATEX_SRC_PATH}//:${TEXINPUTS} pdflatex $(<) --output-directory build
